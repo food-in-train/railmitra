@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RailMitra – Smart Railway Companion</title>
+  <meta name="description" content="Order food in train, check live train running status, seat availability, PNR, and more. RailMitra – Your smart railway companion for Indian railway travelers.">
+  <meta name="keywords" content="food in train, live train running status, order food on train, Indian railway travel, RailMitra">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="RailMitra Team">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RailMitra",
+    "url": "https://your-github-username.github.io/railmtra-landing/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://your-github-username.github.io/railmtra-landing/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "description": "Order food in train, check live train running status, seat availability, PNR, and more for Indian railways."
+  }
+  </script>
+  <style>
+    body { font-family: 'Roboto', 'Open Sans', sans-serif; }
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'); /* Indian train landscape */
+      background-size: cover;
+      background-position: center;
+    }
+    .moving-train {
+      animation: train-move 20s linear infinite;
+      position: absolute; left: 0; bottom: 10px;
+    }
+    @keyframes train-move {
+      0% { left: -400px; }
+      100% { left: 100vw; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Hero Section -->
+  <section class="hero-bg w-full min-h-screen flex flex-col justify-center items-center relative text-white">
+    <div class="absolute inset-0 bg-blue-900/60"></div>
+    <div class="relative z-10 max-w-2xl text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Your Smart Railway Companion – RailMitra</h1>
+      <p class="text-lg md:text-xl mb-6">Order food in train, check live train status, seat availability, and more – anytime, anywhere.</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+        <a href="#order-food" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105 animate-bounce">Order Food on Train</a>
+        <a href="#train-status" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105">Check Train Status</a>
+      </div>
+    </div>
+    <img src="https://cdn.railmitra.com/assets/train.png" alt="Moving Train" class="moving-train w-64 hidden md:block">
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-10">Key Features</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        <div><span class="text-4xl">🍽️</span><p class="mt-2 font-semibold">Order Food in Train</p></div>
+        <div><span class="text-4xl">🚆</span><p class="mt-2 font-semibold">Live Train Status</p></div>
+        <div><span class="text-4xl">📱</span><p class="mt-2 font-semibold">PNR Status</p></div>
+        <div><span class="text-4xl">🪑</span><p class="mt-2 font-semibold">Seat Availability</p></div>
+        <div><span class="text-4xl">🗓️</span><p class="mt-2 font-semibold">Train Schedule</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-12 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-orange-600 mb-8">How It Works</h2>
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+        <div class="flex flex-col items-center">
+          <span class="text-4xl mb-2">🚆</span>
+          <p>Enter Train Number or PNR</p>
+        </div>
+        <span class="text-2xl hidden md:block">→</span>
+        <div class="flex flex-col items-center">
+          <span class="text-4xl mb-2">🍽️</span>
+          <p>Choose station & food</p>
+        </div>
+        <span class="text-2xl hidden md:block">→</span>
+        <div class="flex flex-col items-center">
+          <span class="text-4xl mb-2">😌</span>
+          <p>Confirm order & relax!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose RailMitra -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-8">Why Choose RailMitra?</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+        <li>✅ FSSAI Approved Restaurants</li>
+        <li>✅ Hygienic Packaging</li>
+        <li>✅ Delivery Across 450+ Stations</li>
+        <li>✅ COD &amp; UPI Available</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-12 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-orange-600 mb-8">What Users Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic">“Ordered biryani at Kanpur. Clean packaging, tasty food. Delivery was on time!”</p>
+          <span class="block mt-2 font-semibold text-blue-900">– Priya S, Mumbai</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic">“Live train status was accurate, helped me plan my station stop perfectly!”</p>
+          <span class="block mt-2 font-semibold text-blue-900">– Rahul M, Delhi</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic">“UPI payment made ordering food super easy. Highly recommended!”</p>
+          <span class="block mt-2 font-semibold text-blue-900">– Ananya G, Kolkata</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Download -->
+  <section class="py-12 bg-white" id="download">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Download RailMitra App</h2>
+        <div class="flex gap-4 mb-4">
+          <a href="https://play.google.com/store/apps/details?id=com.railmitra" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" class="h-12">
+          </a>
+          <a href="https://apps.apple.com/in/app/railmitra/id1234567890" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="h-12">
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="assets/app-screenshot.png" alt="RailMitra App Screenshot" class="w-48 rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="bg-blue-900 text-white py-8 mt-8">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div class="mb-4 md:mb-0">
+        <a href="/privacy-policy" class="mr-4 hover:underline">Privacy Policy</a>
+        <a href="/terms" class="mr-4 hover:underline">Terms of Use</a>
+        <a href="/support" class="hover:underline">Support</a>
+      </div>
+      <div class="mb-4 md:mb-0">
+        <span>Email: <a href="mailto:support@railmitra.com" class="underline">support@railmitra.com</a></span><br>
+        <span>Phone: <a href="tel:+911234567890" class="underline">+91 12345 67890</a></span>
+      </div>
+      <div class="flex gap-3">
+        <a href="https://facebook.com/railmitra" aria-label="Facebook" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="h-6 w-6"></a>
+        <a href="https://instagram.com/railmitra" aria-label="Instagram" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="h-6 w-6"></a>
+        <a href="https://twitter.com/railmitra" aria-label="Twitter" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" class="h-6 w-6"></a>
+      </div>
+    </div>
+    <div class="text-center mt-4 text-sm">Made with ❤️ for Indian Railways Travelers <br> <a href="https://github.com/food-in-train/railmtra-landing" class="underline">GitHub</a></div>
+  </footer>
+</body>
+</html>
